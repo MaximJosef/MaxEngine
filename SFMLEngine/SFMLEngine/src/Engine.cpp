@@ -9,13 +9,6 @@
 //v1.0
 
 #include "Engine.h"
-#include "Display.h"
-#include <functional>
-#include <iostream>
-#include "Object.h"
-#include "Console.h"
-#include "imgui.h"
-#include "imgui-SFML.h"
 
 Engine::Engine()
 {
@@ -34,6 +27,8 @@ void Engine::mainLoop(std::function<void()> FunctionForRender)
 		Display::Clear();
 		FunctionForRender();
 		object.DrawAllObjects();
+		outliner.DrawOutliner();
+		objectSettings.DrawObjectSettings(outliner.currentGameObject);
 		console.Draw();
 		ImGui::SFML::Render(Display::GetWindow());
 		Display::Update();

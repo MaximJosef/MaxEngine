@@ -14,14 +14,18 @@ private:
 	std::vector<Frame> frames;
 	double totalLength;
 	double totalProgress;
+	bool isLooping;
 	sf::Sprite *target;
 
 public:
-    Animation(sf::Sprite& target);
+    Animation(sf::Sprite& target, bool isLooping);
 
     void addFrame(Frame&& frame);
 
 	void update(double elapsed);
+
+	bool isFinished() { return totalProgress >= totalLength; };
+	void reset();
 
 };
 

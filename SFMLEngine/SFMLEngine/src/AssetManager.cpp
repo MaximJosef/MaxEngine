@@ -1,8 +1,4 @@
 #include "AssetManager.h"
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
-#include <assert.h>
-#include <map>
 
 AssetManager* AssetManager::sInstance = nullptr;
 

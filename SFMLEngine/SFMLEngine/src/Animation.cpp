@@ -1,9 +1,10 @@
 #include "Animation.h"
 
-Animation::Animation(sf::Sprite& target)
+Animation::Animation(sf::Sprite& target, bool isLooping)
 {
     this->target = &target;
     totalProgress = 0.0;
+    this->isLooping = isLooping;
 }
 
 void Animation::addFrame(Frame&& frame)
@@ -25,4 +26,17 @@ void Animation::update(double elapsed)
             break; 
         }
     }
+
+    if(totalProgress >= totalLength)
+    {
+        if(isLooping)
+        {
+            totalProgress = 0.0f;
+        }
+    }
+}
+
+void Animation::reset()
+{
+    totalProgress = 0.0f;
 }

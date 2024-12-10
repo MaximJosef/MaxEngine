@@ -110,7 +110,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SFML_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)SFMLEngine\include;$(SolutionDir)SFMLEngine\src;$(SolutionDir)SFMLEngine\libs\imgui;$(SolutionDir)SFMLEngine\libs\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SFMLEngine\Example;$(SolutionDir)SFMLEngine\include;$(SolutionDir)SFMLEngine\src;$(SolutionDir)SFMLEngine\libs\imgui;$(SolutionDir)SFMLEngine\libs\SFML-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Example\main.cpp" />
     <ClCompile Include="libs\imgui\imgui-SFML.cpp" />
     <ClCompile Include="libs\imgui\imgui.cpp" />
+    <ClCompile Include="libs\imgui\ImGuiFileDialog.cpp" />
     <ClCompile Include="libs\imgui\imgui_draw.cpp" />
     <ClCompile Include="libs\imgui\imgui_tables.cpp" />
     <ClCompile Include="libs\imgui\imgui_widgets.cpp" />
@@ -149,8 +151,10 @@
     <ClCompile Include="src\Console.cpp" />
     <ClCompile Include="src\Display.cpp" />
     <ClCompile Include="src\Engine.cpp" />
-    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\Object.cpp" />
+    <ClCompile Include="src\ObjectSettings.cpp" />
+    <ClCompile Include="src\Outliner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Animation.h" />
@@ -158,12 +162,17 @@
     <ClInclude Include="include\Console.h" />
     <ClInclude Include="include\Display.h" />
     <ClInclude Include="include\Engine.h" />
+    <ClInclude Include="include\GameObject.h" />
     <ClInclude Include="include\Object.h" />
+    <ClInclude Include="include\ObjectSettings.h" />
+    <ClInclude Include="include\Outliner.h" />
     <ClInclude Include="libs\imgui\imconfig-SFML.h" />
     <ClInclude Include="libs\imgui\imconfig.h" />
     <ClInclude Include="libs\imgui\imgui-SFML.h" />
     <ClInclude Include="libs\imgui\imgui-SFML_export.h" />
     <ClInclude Include="libs\imgui\imgui.h" />
+    <ClInclude Include="libs\imgui\ImGuiFileDialog.h" />
+    <ClInclude Include="libs\imgui\ImGuiFileDialogConfig.h" />
     <ClInclude Include="libs\imgui\imgui_internal.h" />
     <ClInclude Include="libs\imgui\imstb_rectpack.h" />
     <ClInclude Include="libs\imgui\imstb_textedit.h" />
@@ -171,6 +180,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\imgui.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Example\Sprites\BackGround.jpg" />
+    <Image Include="Example\Sprites\Player.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

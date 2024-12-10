@@ -5,6 +5,7 @@
 #include "imgui.h"
 #include "imgui-SFML.h"
 #include <memory>
+#include "GameObject.h"
 
 class Console
 {
@@ -14,4 +15,5 @@ public:
 	std::unique_ptr<std::string> ptr = std::make_unique<std::string>();
 	void Draw();
 };
+
 

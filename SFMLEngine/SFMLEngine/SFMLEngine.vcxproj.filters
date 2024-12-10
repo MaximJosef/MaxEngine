@@ -16,6 +16,12 @@
     <Filter Include="Исходные файлы\imgui">
       <UniqueIdentifier>{854e29b8-5e67-4862-946f-8e195c5b710c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Gui">
+      <UniqueIdentifier>{b6d7198c-3f3e-40c2-bbaa-1cb73f83a832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Physics">
+      <UniqueIdentifier>{55cd5fc1-5b05-46e2-a507-51ae587f1181}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Animation.cpp">
@@ -24,16 +30,10 @@
     <ClCompile Include="src\AssetManager.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="src\Console.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="src\Display.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="src\Engine.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="src\main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="src\Object.cpp">
@@ -54,15 +54,30 @@
     <ClCompile Include="libs\imgui\imgui_widgets.cpp">
       <Filter>Исходные файлы\imgui</Filter>
     </ClCompile>
+    <ClCompile Include="src\Console.cpp">
+      <Filter>Исходные файлы\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Example\main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectSettings.cpp">
+      <Filter>Исходные файлы\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\imgui\ImGuiFileDialog.cpp">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Outliner.cpp">
+      <Filter>Исходные файлы\Gui</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Animation.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="include\AssetManager.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Console.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="include\Display.h">
@@ -101,8 +116,34 @@
     <ClInclude Include="libs\imgui\imconfig-SFML.h">
       <Filter>Исходные файлы\imgui</Filter>
     </ClInclude>
+    <ClInclude Include="include\Console.h">
+      <Filter>Исходные файлы\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObject.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectSettings.h">
+      <Filter>Исходные файлы\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\imgui\ImGuiFileDialog.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Outliner.h">
+      <Filter>Исходные файлы\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\imgui\ImGuiFileDialogConfig.h">
+      <Filter>Исходные файлы\imgui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\imgui.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Example\Sprites\BackGround.jpg">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="Example\Sprites\Player.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
   </ItemGroup>
 </Project>

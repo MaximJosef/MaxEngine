@@ -1,5 +1,7 @@
+C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\Example\main.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\main.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\libs\imgui\imgui-SFML.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\imgui-SFML.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\libs\imgui\imgui.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\imgui.obj
+C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\libs\imgui\ImGuiFileDialog.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\ImGuiFileDialog.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\libs\imgui\imgui_draw.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\imgui_draw.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\libs\imgui\imgui_tables.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\imgui_tables.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\libs\imgui\imgui_widgets.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\imgui_widgets.obj
@@ -8,5 +10,7 @@ C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\AssetManager.cpp;C:\Users\
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\Console.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\Console.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\Display.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\Display.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\Engine.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\Engine.obj
-C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\main.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\main.obj
+C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\GameObject.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\GameObject.obj
 C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\Object.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\Object.obj
+C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\ObjectSettings.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\ObjectSettings.obj
+C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\src\Outliner.cpp;C:\Users\gorya\source\repos\SFMLEngine\SFMLEngine\x64\Debug\Outliner.obj

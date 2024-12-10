@@ -1,5 +1,4 @@
 #include "Console.h"
-#include <memory>
 
 void Console::AddMessage(const std::string& message)
 {
@@ -12,10 +11,12 @@ void Console::Draw()
 	ImGui::BeginChild("Scroll", ImVec2(ImGui::GetContentRegionAvail().x,
 		ImGui::GetContentRegionAvail().y), false,
 		ImGuiWindowFlags_HorizontalScrollbar);
+
 	for(const auto& message : this->messages)
 	{
 		ImGui::Text("%s", message->c_str());
 	}
+
 	ImGui::EndChild();
 	ImGui::End();
 }

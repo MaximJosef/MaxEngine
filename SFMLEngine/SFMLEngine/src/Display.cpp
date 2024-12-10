@@ -1,10 +1,4 @@
 #include "Display.h"
-#include <iostream>
-#include <memory>
-#include "SFML/Graphics.hpp"
-#include "imgui.h"
-#include "imgui-SFML.h"
-#include "Console.h"
 
 namespace Display
 {
